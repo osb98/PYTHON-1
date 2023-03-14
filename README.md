@@ -14,6 +14,7 @@ c = a + b
 d = b - a
 print(c, d)
 ~~~
+
 ~~~
 a = 10
 b = 3
@@ -26,3 +27,12 @@ f = a*b # 곱셈
 g = a**b # 제곱
 print(c,d,e,f,g)
 ~~~
+
+#### 문자열
+1. 큰 따옴표 : "Hello World!
+It's"  
+2. 작은 따옴표 : '대한민국'  
+3. 큰따옴표 3 : """Hello!"""  
+4. 작은 따옴표 3 : 
+'''Life is too short, You need  
+python''' 
