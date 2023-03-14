@@ -150,10 +150,28 @@ print(a, '%', b, '=', result)
 ~~~
 
 ~~~
+num1 = input("숫자입력1: ")
+num2 = input("숫자입력2: ")
+result = num1 + num2
+print(type(num1))
+print(num1, '+', num2, '=', result)
+~~~
+
+~~~
 a = 25
 b = 27
 c = 54
 d = 60
 result = a + b + c + d
 print(a, '+', b, '+', c, '+', d, '=', result)
+~~~
+
+~~~
+a = str(input("이름을 입력하세요"))
+b = str(input("전화번호를 입력하세요"))
+c = int(input("무게를 입력하세요"))
+result = c * 10
+
+print("이름", "a", "전화번호", "b",
+      "무게", "=", result\)
 ~~~
