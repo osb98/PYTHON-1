@@ -455,3 +455,297 @@ print(k[:3])
 print(k[6:])
 print(k[-8:-2])
 ~~~
+
+~~~
+k = "God is love!"
+print(k.upper())
+print(k.lower())
+print(k.strip())
+~~~
+
+~~~
+a = " God, is, love! "
+print(a.split(","))
+print(k.lower())
+print(k.strip()) 
+~~~
+
+~~~
+a = ["apple", "banana", "cherry"]
+a.append("orange") # 맨뒤에 추가
+print(a)
+~~~
+
+~~~
+a = ["apple", "banana", "cherry"]
+a.insert(1,"orange") # 지정된 곳에 삽입
+print(a)
+~~~
+
+~~~
+a = ["apple", "banana", "cherry"]
+a.remove("banana")
+print(a)
+~~~
+
+~~~
+a = ["apple", "banana", "cherry"]
+a.pop() # 맨뒤 삭제
+print(a)
+a.pop(1) # 지정한 위치 삭제
+print(a)
+~~~
+
+~~~
+a = ["apple", "banana", "cherry"]
+del a[0]
+print(a)
+a.clear() # del a
+print(a)
+~~~
+
+~~~
+fruit = ["apple", "banana", "cherry"]
+for x in fruit:
+  print(x)
+~~~
+
+~~~
+fruit = ["apple", "banana", "cherry"]
+for i in range(len(fruit)):
+  print(fruit)
+~~~
+
+#### SORT
+
+~~~
+a = [5,3,6,8,1,9,0]
+a.sort()
+print(a)
+~~~
+
+~~~
+a = [5,3,6,8,1,9,0,2,4,7]
+a.sort(reverse = True)
+print(a)
+a.sort()
+print(a)
+~~~
+
+~~~
+fruit = ["banana", "apple", "kiwi", "cherry", "Orange"]
+fruit.sort() # 대소문자 구분하여 정렬
+print(fruit)
+fruit.sort(key = str.lower) # 대소문자 구분 없이 정렬
+print(fruit)
+fruit.reverse() # 항목의 순서를 역으로 바꿈
+print(fruit)
+~~~
+
+~~~
+# list 복사
+fruit = ["banana", "apple", "kiwi", "cherry", "Orange"]
+myList = fruit.copy()
+print(myList)
+cpList = list(fruit)
+print(cpList)
+~~~
+
+### 2.튜플(Tuple)
+
+~~~
+l = [1,2,3]
+t = (4,5,6)
+l[0] = 5
+print(l)
+# t[0] = 1
+print(t)
+~~~
+
+~~~
+f = ["banana", "apple", "kiwi", "cherry", "Orange"]
+print(len(f))
+~~~
+
+~~~
+t = ("apple",)
+print(t)
+print(type(t))
+f = ("banana") # 튜플로 인식하기 위해서는 ","필요
+print(f)
+print(type(f))
+~~~
+
+~~~
+f = ("banana", "apple", "kiwi", "cherry", "Orange")
+print(f[:4])
+print(f[2:])
+~~~
+
+~~~
+f = ("banana", "apple", "kiwi", "cherry", "Orange")
+if "apple" in f:
+  print("Yes, 'apple' is in")
+else:
+  print("No")
+~~~
+
+### list<->Tuple
+
+~~~
+firm = ['Samsung', 'LG', 'SK']
+tdata = tuple(firm)
+print(firm)
+print(tdata)
+~~~
+
+~~~
+# tuple에 추가
+t = ("banana", "apple", "kiwi", "cherry")
+y = list(t)
+y.append("Orange")
+t = tuple(y)
+print(t)
+~~~
+
+~~~
+t = ("apple", "banana", "cherry")
+q = ("kiwi",)
+t += q
+print(t)
+~~~
+
+~~~
+t = ('apple', 'banana', 'cherry', 'kiwi')
+l = list(t)
+l.remove('apple')
+t= tuple(l)
+print(t)
+del t
+# print(t)
+~~~
+
+### 3.dict 사전자료형
+
+~~~
+d = {
+    'a':1,
+    'b':2,
+    'c':3
+}
+print(d)
+print(d.keys())
+print(d.values())
+print(d.items())
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+print(car)
+print(len(car))
+car["year"] = 2000
+print(car)
+car["item"] = 123456
+car.update({"color" : "red"})
+print(car)
+~~~
+
+~~~
+# 항목 제거
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+car.pop("model")
+print(car) 
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+car.popitem()
+print(car) 
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+car.clear()
+del car 
+~~~
+
+#### LOOP
+
+~~~
+# 값을 하나씩 인쇄
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+for x in car :
+  print(car[x])
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+for x in car.values() :
+  print(x)
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+for x,y in car.items():
+  print(x,y)
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+myCar = car.copy()
+print(myCar)
+~~~
+
+~~~
+car = {
+    "brand" : "BMW",
+    "model" : "GT",
+    "year" : 1988
+}
+myCar = dict(car)
+print(myCar)
+~~~
+
+~~~
+name1 = {"name" : "홍길동", "year":2001}
+name2 = {"name" : "갑돌이", "year":2010}
+name3 = {"name" : "갑순이", "year":2003}
+family ={
+    "name1" : name1,
+    "name2" : name2,
+    "name3" : name3
+}
+print(family)
+~~~
