@@ -443,3 +443,15 @@ k =['a' , 'b' , 'c' , 'd']
 k.remove('d')
 print(k)
 ~~~
+
+~~~
+k = "God is love!"
+print(k[:3])
+~~~
+
+~~~
+k = "God is love!"
+print(k[:3])
+print(k[6:])
+print(k[-8:-2])
+~~~
